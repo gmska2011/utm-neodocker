@@ -1,0 +1,24 @@
+Hello, guys!
+
+To START a new UTM just: 
+ - install docker-ce
+ - run "1_start_utm.sh"
+
+To watch whats going on there:
+ - "docker logs utm -f"
+ - or "docker exec -it utm sh"
+   and run "supervisorctl"
+
+  In main window you will see status of services. There you can 
+  watch each log file
+  by command "tail utm" or "tail updater" for ex.
+
+To DELETE a container:
+ - run "2_delete_utm.sh"
+
+
+When a new version of docker image released in some cases we need
+to pull manually a new image by command:
+ - "docker pull gmska2011/utm-neo-docker:latest"
+
+In Muxa we trust...
